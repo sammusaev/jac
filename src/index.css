@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 4rem);
+  text-align: center;
+}
+
+.app-header {
+  margin-bottom: 1.5rem;
+}
+
+.app-header h1 {
+  font-size: 2.5rem;
+  line-height: 1.1;
+  font-weight: 500;
+  margin: 0 0 0.5rem 0;
+}
+
+.app-header p {
+  margin: 0;
+  color: #bdc1c6;
+}
+
+.toggle-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.toggle-label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #e1dc96;
+}
+
+.main-content {
+  display: flex;
+  flex-grow: 1;
+  gap: 1.5rem;
+  overflow: hidden;
+}
+
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.column h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.2rem;
+  text-align: left;
+  font-weight: 400;
+  color: #bdc1c6;
+}
+
+.text-area,
+.preview-container {
+  flex-grow: 1;
+  border: 1px solid #5f6368;
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+  overflow: auto;
+  text-align: left;
+  width: 100%;
+}
+
+.text-area {
+  background-color: #2d2d2d;
+  color: #e8eaed;
+  font-family: 'Fira Code', 'Courier New', monospace;
+  resize: none;
+}
+
+.text-area:read-only {
+  background-color: #3c4043;
+  cursor: not-allowed;
+}
+
+.preview-container {
+  background-color: #ffffff;
+  color: #213547;
+}
+
+.preview-placeholder {
+  color: #707070;
+  font-style: italic;
+}

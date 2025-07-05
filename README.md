@@ -6,9 +6,9 @@
 
 ## Instructions
 (Assuming you have [pnpm](https://pnpm.io/installation) installed):
-1. `pnpm i`
-2. `pnpm run dev`
-3. Open a browser and navigate to `http://localhost:5173/`
+1. `pnpm i && pnpm run dev`
+
+Alternatively, you can access a live version on https://sammusaev.github.io/jac/
 
 ## Known issues
 - Markup 'block' components (e.g., `{panel}`, `{color}`) have issues rendering in the Live Preview. Simply typing just above the opening tag(s) fixes the issue for all blocks
